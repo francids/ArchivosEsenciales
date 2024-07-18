@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/francids/ArchivosEsenciales/master/LogoBannerDark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/francids/ArchivosEsenciales/master/LogoBannerLight.png">
+  <img alt="Archivos Esenciales logo" src="https://raw.githubusercontent.com/francids/ArchivosEsenciales/master/images/LogoBannerLight.png">
+</picture>
+
 # 🗂️ Archivos Esenciales
 
 **Archivos Esenciales** es una aplicación de escritorio que brinda al usuario las herramientas necesarias para trabajar con archivos PDF e imágenes de manera eficiente y sencilla. Desde combinar y dividir PDF hasta comprimir, proteger y convertir imágenes, **Archivos Esenciales** permite al usuario realizar diversas tareas de forma rápida y sencilla.
