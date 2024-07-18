@@ -1,10 +1,10 @@
-# Archivos Esenciales
+# 🗂️ Archivos Esenciales
 
 **Archivos Esenciales** es una aplicación de escritorio que brinda al usuario las herramientas necesarias para trabajar con archivos PDF e imágenes de manera eficiente y sencilla. Desde combinar y dividir PDF hasta comprimir, proteger y convertir imágenes, **Archivos Esenciales** permite al usuario realizar diversas tareas de forma rápida y sencilla.
 
-## Funciones
+## 📋 Funciones
 
-- **PDF**
+- **PDF** 📄
   - Combinar PDF's
   - Dividir PDF
   - Comprimir PDF
@@ -12,27 +12,27 @@
   - Transformar PDF a Word
   - Transformar PDF a PowerPoint
   - Transformar PDF a Imagen (JPG / PNG)
-- **Imágenes**
+- **Imágenes** 🖼️
   - Comprimir imagen
   - Convertir imagen (PNG, JPG, WEBP)
   - Redimensionar imagen
 
-## Plataformas
+## 💻 Plataformas
 
 **Archivos Esenciales** está diseñado primordialmente para Windows.
 
-## Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 
 Esta aplicación se está desarrollando con la tecnología [Avalonia UI](https://avaloniaui.net/).
 
-## Estructura del Proyecto
+## 🗂️ Estructura del Proyecto
 
 El proyecto se compone de dos carpetas principales:
 
 - `ArchivosEsenciales`
 - `ArchivosEsenciales.Desktop`
 
-## Ejecución del Proyecto
+## 🚀 Ejecución del Proyecto
 
 ### Desde la Terminal
 
