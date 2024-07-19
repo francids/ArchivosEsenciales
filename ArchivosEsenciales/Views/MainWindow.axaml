@@ -4,9 +4,38 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:ArchivosEsenciales.Views"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="ArchivosEsenciales.Views.MainWindow"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="ArchivosEsenciales">
-        <views:MainView />
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="400"
+		Width="500"
+		Height="400"
+		WindowStartupLocation="CenterScreen"
+		KeyDown="Window_KeyDown"
+		x:Class="ArchivosEsenciales.Views.MainWindow"
+        Icon="/Assets/ArchivosEsencialesAppIcon.ico"
+        Title="Archivos Esenciales">
+
+	<Window.KeyBindings>
+		<KeyBinding Gesture="CTRL+Q"
+					Command="{Binding QuitProgramCommand}"></KeyBinding>
+	</Window.KeyBindings>
+
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.ThemeDictionaries>
+				<ResourceDictionary x:Key='Light'>
+					<SolidColorBrush x:Key='BackgroundBrush'>#FDFAFD</SolidColorBrush>
+					<SolidColorBrush x:Key='ForegroundBrush'>#0F0C0F</SolidColorBrush>
+				</ResourceDictionary>
+				<ResourceDictionary x:Key='Dark'>
+					<SolidColorBrush x:Key='BackgroundBrush'>#0F0C0F</SolidColorBrush>
+					<SolidColorBrush x:Key='ForegroundBrush'>#FDFAFD</SolidColorBrush>
+				</ResourceDictionary>
+			</ResourceDictionary.ThemeDictionaries>
+		</ResourceDictionary>
+	</Window.Resources>
+	<Window.Styles>
+		<Style Selector="Border">
+			<Setter Property="Background" Value="{DynamicResource BackgroundBrush}" />
+		</Style>
+	</Window.Styles>
+	<views:MainView />
 </Window>
