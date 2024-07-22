@@ -3,7 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:ArchivosEsenciales.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="400"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="250"
              x:Class="ArchivosEsenciales.Views.MainView"
              x:DataType="vm:MainViewModel">
 	<Design.DataContext>
@@ -15,7 +15,12 @@
 	<Border Padding="40">
 		<Panel>
 			<Image Width="260" Source="/Assets/Logos/ArchivosEsencialesLogoLight.png" HorizontalAlignment="Left" VerticalAlignment="Top" />
-			<TextBlock Text="{Binding FirstQuestion}" VerticalAlignment="Center" />
+			<TextBlock Text="{Binding FirstQuestion}" FontFamily="{StaticResource ArchivoRegular}" VerticalAlignment="Center" FontSize="20" FontWeight="Black" />
+			<StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,20,0,0">
+				<Button Content="PDF" />
+				<TextBlock Margin="4,0" />
+				<Button Content="Imagen" />
+			</StackPanel>
 		</Panel>
 	</Border>
 </UserControl>

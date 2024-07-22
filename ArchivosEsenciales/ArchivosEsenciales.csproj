@@ -5,6 +5,26 @@
 		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
 
+	<ItemGroup>
+		<AvaloniaResource Include="Assets\Fonts\Archivo-Black.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-BlackItalic.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-Bold.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-BoldItalic.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-ExtraBold.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-ExtraBoldItalic.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-ExtraLight.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-ExtraLightItalic.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-Italic.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-Light.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-LightItalic.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-Medium.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-MediumItalic.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-Regular.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-SemiBold.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-SemiBoldItalic.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-Thin.ttf" />
+		<AvaloniaResource Include="Assets\Fonts\Archivo-ThinItalic.ttf" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<AvaloniaResource Include="Assets\**" />
