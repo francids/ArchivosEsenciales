@@ -7,6 +7,7 @@
         mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="250"
 		Width="500"
 		Height="250"
+		CanResize="False"
 		WindowStartupLocation="CenterScreen"
 		KeyDown="Window_KeyDown"
 		x:Class="ArchivosEsenciales.Views.MainWindow"
