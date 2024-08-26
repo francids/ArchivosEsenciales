@@ -15,7 +15,7 @@
 	<Border Padding="40">
 		<Panel>
 			<Image Width="260" Source="/Assets/Logos/ArchivosEsencialesLogoLight.png" HorizontalAlignment="Left" VerticalAlignment="Top" />
-			<TextBlock Text="{Binding FirstQuestion}" FontFamily="{StaticResource ArchivoRegular}" VerticalAlignment="Center" FontSize="20" FontWeight="Black" />
+			<TextBlock Text="{Binding FirstQuestion}" FontFamily="{StaticResource ArchivoRegular}" VerticalAlignment="Center" FontSize="20" />
 			<StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Margin="0,20,0,0">
 				<Button Content="PDF" Click="openPdfDialog" />
 				<TextBlock Margin="4,0" />

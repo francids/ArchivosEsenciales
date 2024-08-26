@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Platform.Storage;
 using System.Collections.Generic;
@@ -15,5 +16,10 @@ public partial class PdfTools : Window
 	private void InitializeComponent()
 	{
 		AvaloniaXamlLoader.Load(this);
+	}
+
+	private void CloseWindow(object sender, RoutedEventArgs e)
+	{
+		Close();
 	}
 }

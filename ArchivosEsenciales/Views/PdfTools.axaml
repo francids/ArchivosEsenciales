@@ -5,16 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:views="clr-namespace:ArchivosEsenciales.Views"
 		WindowStartupLocation="CenterScreen"
-        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="250"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="300"
         x:Class="ArchivosEsenciales.Views.PdfTools"
         Width="500"
-		Height="250"
+		Height="300"
 		CanResize="False"
         Icon="/Assets/ArchivosEsencialesAppIcon.ico"
         Title="Archivos Esenciales">
 	<Border Padding="40">
-		<Panel>
-			<Button Classes="Secondary" Content="Volver" />
-		</Panel>
+		<StackPanel>
+			<Button Classes="Secondary" Content="Volver" Click="CloseWindow" Margin="0,0,0,8" />
+			<TextBlock Text="Herramientas PDF" FontSize="24" FontFamily="{StaticResource ArchivoBold}" />
+			<TextBlock Text="Seleccione una herramienta para trabajar con archivos PDF" FontFamily="{StaticResource ArchivoRegular}" FontSize="16" Margin="0,8,0,0" />
+
+			<WrapPanel Margin="0,20,0,0">
+				<Button Content="Unir PDFs" IsEnabled="False" Margin="0,4,8,4" />
+				<Button Content="Dividir PDF" IsEnabled="False" Margin="0,4,8,4" />
+				<Button Content="Rotar PDF" IsEnabled="False" Margin="0,4,8,4" />
+				<Button Content="Comprimir PDF" Margin="0,4,8,4" />
+			</WrapPanel>
+		</StackPanel>
 	</Border>
 </Window>
