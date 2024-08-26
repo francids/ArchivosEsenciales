@@ -22,7 +22,7 @@
 				<Button Content="Unir PDFs" IsEnabled="False" Margin="0,4,8,4" />
 				<Button Content="Dividir PDF" IsEnabled="False" Margin="0,4,8,4" />
 				<Button Content="Rotar PDF" IsEnabled="False" Margin="0,4,8,4" />
-				<Button Content="Comprimir PDF" Margin="0,4,8,4" />
+				<Button Content="Comprimir PDF" Margin="0,4,8,4" Click="CompressPdf" />
 			</WrapPanel>
 		</StackPanel>
 	</Border>

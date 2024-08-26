@@ -11,7 +11,7 @@ public partial class MainView : UserControl
 		InitializeComponent();
 	}
 
-	private async void openPdfDialog(object sender, RoutedEventArgs e)
+	private async void OpenPdfDialog(object sender, RoutedEventArgs e)
 	{
 		var topLevel = TopLevel.GetTopLevel(this);
 
@@ -30,7 +30,7 @@ public partial class MainView : UserControl
 		}
 	}
 
-	private async void openImageDialog(object sender, RoutedEventArgs e)
+	private async void OpenImageDialog(object sender, RoutedEventArgs e)
 	{
 		var topLevel = TopLevel.GetTopLevel(this);
 
