@@ -1,6 +1,5 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
-using System.Collections.Generic;
 using Avalonia.Platform.Storage;
 
 namespace ArchivosEsenciales.Views;
@@ -22,6 +21,13 @@ public partial class MainView : UserControl
 			AllowMultiple = true,
 			FileTypeFilter = new[] { FilePickerFileTypes.Pdf }
 		});
+
+		if (files.Count > 0)
+		{
+			// Open PdfTools window
+			var pdfToolsWindow = new PdfTools(files);
+			pdfToolsWindow.Show();
+		}
 	}
 
 	private async void openImageDialog(object sender, RoutedEventArgs e)
@@ -31,7 +37,7 @@ public partial class MainView : UserControl
 		var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
 		{
 			Title = "Selecciona una imagen",
-			AllowMultiple = true,
+			AllowMultiple = false,
 			FileTypeFilter = new[] { FilePickerFileTypes.ImageAll }
 		});
 	}
