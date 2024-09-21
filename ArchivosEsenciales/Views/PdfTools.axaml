@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:views="clr-namespace:ArchivosEsenciales.Views"
 		WindowStartupLocation="CenterScreen"
-        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="300"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="400"
         x:Class="ArchivosEsenciales.Views.PdfTools"
         Width="500"
-		Height="300"
+		Height="400"
 		CanResize="False"
         Icon="/Assets/ArchivosEsencialesAppIcon.ico"
         Title="Archivos Esenciales">
@@ -22,7 +22,10 @@
 				<Button Content="Unir PDFs" IsEnabled="False" Margin="0,4,8,4" />
 				<Button Content="Dividir PDF" IsEnabled="False" Margin="0,4,8,4" />
 				<Button Content="Rotar PDF" IsEnabled="False" Margin="0,4,8,4" />
-				<Button Content="Comprimir PDF" Margin="0,4,8,4" Click="CompressPdf" />
+				<Button Content="Comprimir PDF" IsEnabled="True" Margin="0,4,8,4" Click="CompressPdf" />
+				<Button Content="Transformar a Word" IsEnabled="False" Margin="0,4,8,4" />
+				<Button Content="Transformar a PowerPoint" IsEnabled="False" Margin="0,4,8,4" />
+				<Button Content="Transformar a Imagen" IsEnabled="False" Margin="0,4,8,4" />
 			</WrapPanel>
 		</StackPanel>
 	</Border>
