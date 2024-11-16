@@ -13,6 +13,11 @@ public partial class PdfTools : Window
 {
 	private IReadOnlyList<Files> files;
 
+	public PdfTools() : this(new List<IStorageFile>())
+	{
+		InitializeComponent();
+	}
+
 	public PdfTools(IReadOnlyList<IStorageFile> files)
 	{
 		InitializeComponent();

@@ -1,5 +1,6 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Avalonia.Markup.Xaml;
 using Avalonia.Platform.Storage;
 
 namespace ArchivosEsenciales.Views;
@@ -8,7 +9,7 @@ public partial class MainView : UserControl
 {
 	public MainView()
 	{
-		InitializeComponent();
+		AvaloniaXamlLoader.Load(this);
 	}
 
 	private async void OpenPdfDialog(object sender, RoutedEventArgs e)
