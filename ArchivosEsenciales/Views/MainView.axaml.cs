@@ -16,17 +16,20 @@ public partial class MainView : UserControl
 	{
 		var topLevel = TopLevel.GetTopLevel(this);
 
-		var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
+		var filePickerOptions = new FilePickerOpenOptions
 		{
 			Title = "Selecciona un archivo PDF",
 			AllowMultiple = true,
-			FileTypeFilter = new[] { FilePickerFileTypes.Pdf }
-		});
+			FileTypeFilter = [FilePickerFileTypes.Pdf],
+		};
 
-		if (files.Count > 0)
+		var pickedFiles = await topLevel!.StorageProvider.OpenFilePickerAsync(filePickerOptions);
+
+		if (pickedFiles.Count > 0)
 		{
-			// Open PdfTools window
-			var pdfToolsWindow = new PdfTools(files);
+			var pdfToolsWindow = new PdfTools(pickedFiles);
+			((Window)VisualRoot!).Hide();
+			pdfToolsWindow.Closed += (sender, e) => ((Window)VisualRoot!).Show();
 			pdfToolsWindow.Show();
 		}
 	}
@@ -35,11 +38,18 @@ public partial class MainView : UserControl
 	{
 		var topLevel = TopLevel.GetTopLevel(this);
 
-		var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
+		var filePickerOptions = new FilePickerOpenOptions
 		{
 			Title = "Selecciona una imagen",
 			AllowMultiple = false,
-			FileTypeFilter = new[] { FilePickerFileTypes.ImageAll }
-		});
+			FileTypeFilter = [FilePickerFileTypes.ImageAll],
+		};
+
+		var pickedFiles = await topLevel!.StorageProvider.OpenFilePickerAsync(filePickerOptions);
+
+		if (pickedFiles.Count > 0)
+		{
+			// TODO: Implement image tools
+		}
 	}
 }
