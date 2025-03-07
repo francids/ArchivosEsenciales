@@ -6,26 +6,31 @@
 
 # Archivos Esenciales 🗂️
 
-**Archivos Esenciales** es una aplicación de escritorio que brinda al usuario las herramientas necesarias para trabajar con archivos PDF e imágenes de manera eficiente y sencilla. Desde combinar y dividir PDF hasta comprimir, proteger y convertir imágenes, **Archivos Esenciales** permite al usuario realizar diversas tareas de forma rápida y sencilla.
+**Archivos Esenciales** es una aplicación de escritorio que brinda al usuario las herramientas necesarias para trabajar
+con archivos PDF e imágenes de manera eficiente y sencilla. Desde combinar y dividir PDF hasta comprimir, proteger y
+convertir imágenes, **Archivos Esenciales** permite al usuario realizar diversas tareas de forma rápida y sencilla.
 
 ## Motivación 🚀
 
-La idea de **Archivos Esenciales** surge de la necesidad de contar con una herramienta que permita realizar tareas comunes con archivos PDF e imágenes de manera rápida, sencilla y localmente en el dispositivo. **Archivos Esenciales** busca ser una herramienta esencial para el usuario, brindándole las herramientas necesarias para trabajar con archivos PDF e imágenes de manera eficiente sin necesidad de depender de servicios en línea.
+La idea de **Archivos Esenciales** surge de la necesidad de contar con una herramienta que permita realizar tareas
+comunes con archivos PDF e imágenes de manera rápida, sencilla y localmente en el dispositivo. **Archivos Esenciales**
+busca ser una herramienta esencial para el usuario, brindándole las herramientas necesarias para trabajar con archivos
+PDF e imágenes de manera eficiente sin necesidad de depender de servicios en línea.
 
 ## Funciones 📋
 
 - **PDF** 📄
-  - Combinar PDF's
-  - Dividir PDF
-  - Comprimir PDF
-  - Proteger PDF
-  - Transformar PDF a Word
-  - Transformar PDF a PowerPoint
-  - Transformar PDF a Imagen (JPG / PNG)
+    - Combinar PDF's
+    - Dividir PDF
+    - Comprimir PDF
+    - Proteger PDF
+    - Transformar PDF a Word
+    - Transformar PDF a PowerPoint
+    - Transformar PDF a Imagen (JPG / PNG)
 - **Imágenes** 🖼️
-  - Comprimir imagen
-  - Convertir imagen (PNG, JPG, WEBP)
-  - Redimensionar imagen
+    - Comprimir imagen
+    - Convertir imagen (PNG, JPG, WEBP)
+    - Redimensionar imagen
 
 ## Plataformas 💻
 
@@ -33,25 +38,4 @@ La idea de **Archivos Esenciales** surge de la necesidad de contar con una herra
 
 ## Tecnologías Utilizadas 🛠️
 
-Esta aplicación se está desarrollando con la tecnología [Avalonia UI](https://avaloniaui.net/).
-
-## Estructura del Proyecto 🗂️
-
-El proyecto se compone de dos carpetas principales:
-
-- `ArchivosEsenciales`
-- `ArchivosEsenciales.Desktop`
-
-## Ejecución del Proyecto 🚀
-
-### Desde la Terminal
-
-Para depurar la aplicación desde la terminal, navega a la carpeta `ArchivosEsenciales.Desktop` y ejecuta el siguiente comando:
-
-```bash
-dotnet run
-```
-
-### Desde Visual Studio
-
-Para depurar la aplicación desde Visual Studio, establece `ArchivosEsenciales.Desktop` como el proyecto de inicio.
+Esta aplicación se está desarrollando con la tecnología [MAUI](https://dotnet.microsoft.com/apps/maui).
