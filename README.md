@@ -20,17 +20,13 @@ PDF e imágenes de manera eficiente sin necesidad de depender de servicios en l�
 ## Funciones 📋
 
 - **PDF** 📄
-    - Combinar PDF's
-    - Dividir PDF
+    - Convertir a Word
+    - Convertir a PowerPoint
+    - Convertir a Imagen
     - Comprimir PDF
-    - Proteger PDF
-    - Transformar PDF a Word
-    - Transformar PDF a PowerPoint
-    - Transformar PDF a Imagen (JPG / PNG)
 - **Imágenes** 🖼️
+    - Convertir imagen a PNG o JPG
     - Comprimir imagen
-    - Convertir imagen (PNG, JPG, WEBP)
-    - Redimensionar imagen
 
 ## Plataformas 💻
 
