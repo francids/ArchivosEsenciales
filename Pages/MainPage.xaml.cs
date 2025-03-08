@@ -1,4 +1,4 @@
-﻿namespace ArchivosEsenciales;
+﻿namespace ArchivosEsenciales.Pages;
 
 public partial class MainPage
 {

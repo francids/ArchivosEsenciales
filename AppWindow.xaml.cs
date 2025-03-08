@@ -1,4 +1,6 @@
-﻿namespace ArchivosEsenciales;
+﻿using ArchivosEsenciales.Pages;
+
+namespace ArchivosEsenciales;
 
 public partial class AppWindow
 {
