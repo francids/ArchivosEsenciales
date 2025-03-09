@@ -3,6 +3,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ArchivosEsenciales.Pages.MainPage">
+    <NavigationPage.HasNavigationBar>False</NavigationPage.HasNavigationBar>
     <VerticalStackLayout
         VerticalOptions="Center"
         Padding="40"
@@ -14,19 +15,19 @@
                Dark=archivos_esenciales_logo_dark.png
                }" />
         <Label
-            Text="¿Qué tipo de archivo(s) tienes?"
+            Text="¿Qué tipo de archivo tienes?"
             Style="{StaticResource SubHeadline}"
             SemanticProperties.HeadingLevel="Level1" />
         <StackLayout Margin="0, 0, 0, 0" Spacing="8" HorizontalOptions="Center" Orientation="Horizontal">
             <Button
                 Text="PDF"
                 Clicked="OnPdfButtonClicked"
-                SemanticProperties.Hint="Abrir ventana de herramientas para PDFs"
+                SemanticProperties.Hint="Abrir herramientas para PDFs"
                 HorizontalOptions="Fill" />
             <Button
                 Text="Imagen"
                 Clicked="OnImageButtonClicked"
-                SemanticProperties.Hint="Abir ventana de herramientas para imágenes"
+                SemanticProperties.Hint="Abir herramientas para imágenes"
                 HorizontalOptions="Fill" />
         </StackLayout>
     </VerticalStackLayout>

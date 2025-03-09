@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchivosEsenciales.Pages.PdfPage">
+    <NavigationPage.HasNavigationBar>False</NavigationPage.HasNavigationBar>
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        Padding="40"
+        Spacing="16">
+        <Label
+            Text="¿Qué deseas realizar?"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+        <Grid>
+            <Grid.ColumnSpacing>8</Grid.ColumnSpacing>
+            <Grid.RowSpacing>8</Grid.RowSpacing>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                x:Name="PdfToWord"
+                Text="Convertir a Word"
+                Clicked="OnPdfToWordButtonClicked"
+                HorizontalOptions="Fill"
+                IsEnabled="True" />
+            <ActivityIndicator
+                Grid.Row="0"
+                Grid.Column="0"
+                x:Name="PdfToWordIndicator"
+                IsRunning="False"
+                IsVisible="False"
+                HorizontalOptions="Center" VerticalOptions="Center" />
+            <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Convertir a PowerPoint"
+                HorizontalOptions="Fill"
+                IsEnabled="False" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="Convertir a Imagen"
+                HorizontalOptions="Fill"
+                IsEnabled="False" />
+            <Button
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="Comprimir PDF"
+                HorizontalOptions="Fill"
+                IsEnabled="False" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

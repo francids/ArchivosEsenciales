@@ -25,10 +25,9 @@ public partial class MainPage
             };
 
             var pickedFiles = await FilePicker.Default.PickMultipleAsync(options);
-            if (pickedFiles.Any())
-            {
-                await DisplayAlert("Título", "Mensaje", "Cancelar");
-            }
+            if (!pickedFiles.Any()) return;
+
+            await Navigation.PushAsync(new PdfPage());
         }
         catch (Exception ex)
         {
@@ -54,10 +53,9 @@ public partial class MainPage
             };
 
             var pickedFile = await FilePicker.Default.PickAsync(options);
-            if (pickedFile != null)
-            {
-                await DisplayAlert("Título", "Mensaje", "Cancelar");
-            }
+            if (pickedFile == null) return;
+
+            await DisplayAlert("Título", "Mensaje", "Cancelar");
         }
         catch (Exception ex)
         {

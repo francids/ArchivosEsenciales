@@ -7,6 +7,6 @@ public partial class AppWindow
     public AppWindow()
     {
         InitializeComponent();
-        Page = new MainPage();
+        Page = new NavigationPage(new MainPage());
     }
 }
