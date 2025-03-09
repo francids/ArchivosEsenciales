@@ -1,4 +1,6 @@
-﻿namespace ArchivosEsenciales.Pages;
+﻿using ArchivosEsenciales.Services;
+
+namespace ArchivosEsenciales.Pages;
 
 public partial class PdfPage
 {
@@ -30,8 +32,11 @@ public partial class PdfPage
     {
         try
         {
-            EnableLoadingInButton(PdfToWord, PdfToWordIndicator);
-            await Task.Delay(1000);
+            MainThread.BeginInvokeOnMainThread(() => { EnableLoadingInButton(PdfToWord, PdfToWordIndicator); });
+            if (BindingContext is not string filePath) throw new NullReferenceException();
+
+            await Task.Run(async () => { await PdfService.ConvertToWord(filePath); });
+            await DisplayAlert("Éxito", "El archivo se convirtió correctamente", "Aceptar");
         }
         catch (Exception ex)
         {
@@ -39,7 +44,27 @@ public partial class PdfPage
         }
         finally
         {
-            DisableLoadingInButton(PdfToWord, PdfToWordIndicator);
+            MainThread.BeginInvokeOnMainThread(() => { DisableLoadingInButton(PdfToWord, PdfToWordIndicator); });
+        }
+    }
+
+    private async void OnPdfToPptxButtonClicked(object sender, EventArgs e)
+    {
+        try
+        {
+            MainThread.BeginInvokeOnMainThread(() => { EnableLoadingInButton(PdfToPptx, PdfToPptxIndicator); });
+            if (BindingContext is not string filePath) throw new NullReferenceException();
+
+            await Task.Run(async () => { await PdfService.ConvertToPptx(filePath); });
+            await DisplayAlert("Éxito", "El archivo se convirtió correctamente", "Aceptar");
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"Ocurrió un error: {ex.Message}", "Aceptar");
+        }
+        finally
+        {
+            MainThread.BeginInvokeOnMainThread(() => { DisableLoadingInButton(PdfToPptx, PdfToPptxIndicator); });
         }
     }
 }

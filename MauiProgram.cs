@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Storage;
+using Microsoft.Extensions.Logging;
 
 #if WINDOWS
 using Microsoft.Maui.LifecycleEvents;
@@ -13,6 +15,7 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
+            .UseMauiCommunityToolkit()
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("Archivo-Black.ttf", "ArchivoBlack");
@@ -34,6 +37,8 @@ public static class MauiProgram
                 fonts.AddFont("Archivo-Thin.ttf", "ArchivoThin");
                 fonts.AddFont("Archivo-ThinItalic.ttf", "ArchivoThinItalic");
             });
+
+        builder.Services.AddSingleton(FileSaver.Default);
 
 #if WINDOWS
         builder.ConfigureLifecycleEvents(events =>

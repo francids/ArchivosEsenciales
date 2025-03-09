@@ -24,10 +24,13 @@ public partial class MainPage
                 FileTypes = pdfFileType,
             };
 
-            var pickedFiles = await FilePicker.Default.PickMultipleAsync(options);
-            if (!pickedFiles.Any()) return;
+            var pickedFile = await FilePicker.Default.PickAsync(options);
+            if (pickedFile == null) return;
 
-            await Navigation.PushAsync(new PdfPage());
+            await Navigation.PushAsync(new PdfPage
+            {
+                BindingContext = pickedFile.FullPath
+            });
         }
         catch (Exception ex)
         {
