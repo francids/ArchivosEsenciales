@@ -6,9 +6,11 @@
 
 # Archivos Esenciales 🗂️
 
-**Archivos Esenciales** es una aplicación de escritorio que brinda al usuario las herramientas necesarias para trabajar
-con archivos PDF e imágenes de manera eficiente y sencilla. Desde combinar y dividir PDF hasta comprimir, proteger y
-convertir imágenes, **Archivos Esenciales** permite al usuario realizar diversas tareas de forma rápida y sencilla.
+**Archivos Esenciales** es una aplicación de escritorio integral que te proporciona las herramientas esenciales para
+gestionar y transformar tus archivos PDF e imágenes con facilidad. Convierte tus PDF a documentos de Word editables,
+presentaciones de PowerPoint o imágenes. Reduce el tamaño de tus PDF. Además, transforma tus imágenes a formatos PNG o
+JPG y optimiza su tamaño. **Archivos Esenciales** simplifica tus tareas diarias, permitiendo trabajar con tus archivos
+de manera rápida y efectiva.
 
 ## Motivación 🚀
 
@@ -34,4 +36,7 @@ PDF e imágenes de manera eficiente sin necesidad de depender de servicios en l�
 
 ## Tecnologías Utilizadas 🛠️
 
-Esta aplicación se está desarrollando con la tecnología [MAUI](https://dotnet.microsoft.com/apps/maui).
+Esta aplicación se está desarrollando con las tecnologías:
+
+- [MAUI](https://dotnet.microsoft.com/apps/maui).
+- [Aspose](https://www.aspose.app/)
