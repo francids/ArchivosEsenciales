@@ -446,8 +446,6 @@
     </Style>
 
     <Style TargetType="TitleBar">
-        <Setter Property="Icon"
-                Value="archivos_esenciales_app_icon.ico" />
         <Setter Property="HeightRequest"
                 Value="48" />
         <Setter Property="MinimumHeightRequest"
