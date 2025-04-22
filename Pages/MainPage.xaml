@@ -27,6 +27,7 @@
             <Button
                 Text="Imagen"
                 Clicked="OnImageButtonClicked"
+                IsEnabled="False"
                 SemanticProperties.Hint="Abir herramientas para imágenes"
                 HorizontalOptions="Fill" />
         </StackLayout>
